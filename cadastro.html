@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cpg.css">
+    <script src="cadastrojs.js" defer></script>
+
+    <!-- Fonte Grenze Gotisch -->
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <!-- Font Awesome (para ícones, se usar) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+        <h1>Fale Conosco</h1>
+        <p>Cadastre-se. Qualquer dúvida, avise-nos.</p>
+
+         <div class="register-link">
+            <p>Deseja voltar? <a href="index.html">Página inicial</a></p>
+        </div>
+
+    <div class="container">
+        <div class="container-inner">
+        <h1>Formulário de Contato</h1>
+
+        <form action="#" method="post">
+
+            <div class="input-box">
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="nascimento" name="nascimento" placeholder="Data de nascimento" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="CPF" name="CPF" placeholder="Seu CPF" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="RG" name="RG" placeholder="Seu RG" required>
+                 </div>
+            </div>
+
+            <div class="input-box">
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="3" required
+                    style="width: 100%; border-radius: 20px; padding: 20px; background-color: rgba(0, 0, 0, 0.2); color: rgb(231, 223, 223); resize: none; font-size: 20px; border: none;"></textarea>
+            
+            </div>
+            
+            
+        </form>
+    </div>
+
+    
+        <button type="submit" class="login">Enviar</button>
+
+    <footer style="text-align: center; margin-top: 20px; color: white;">
+        <p>&copy; 2025 DevClub Login. Todos os direitos reservados.</p>
+    </footer>
+
+    
+</head>
+<body>
+
+<script>
+  function mostrarModal() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('modal').style.display = 'block';
+  }
+  function fecharModal() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('modal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
