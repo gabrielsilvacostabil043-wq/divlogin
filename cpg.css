@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grenze Gotisch", serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://thafd.bing.com/th/id/OIP.8e3mBj4lm4Jx3z_0Uhp54AHaEo?w=287&h=180&c=7&r=0&o=7&cb=thfc1&dpr=1.3&pid=1.7&rm=3);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: white;
+    color: #0d47a1;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+        font-size: 70px;
+        margin: 0 0 -20px;
+}
+
+p{
+     font-size: 30px;
+     margin: 0 0 20px;
+}
+
+.container {
+    width: 600px;
+    height: 800px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 20px solid rgba(16, 14, 14, 0.2);
+    overflow: hidden;
+    background-clip: padding-box; 
+    color: #161212;
+    padding: 13px 15px;
+    box-shadow: inset 0 0 1em rgb(121, 119, 119), 0 0 1em rgb(19, 16, 16);
+    backdrop-filter: blur(60px);
+
+    /* O segredo está aqui 👇 */
+    background-clip: padding-box; 
+
+}
+
+
+.container h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    --radius: 18px;
+    --pad: 14px;
+    --grad: linear-gradient(135deg,#7c3aed,#06b6d4);
+    border-radius: var(--radius);
+    padding: calc(var(--pad) + 2px);
+    background: 
+    linear-gradient(#0b0b12,#0b0b12) padding-box,
+    var(--grad) border-box;
+    border: 2px solid transparent;
+    color: #e5e7eb; font: 500 16px/1.2 ui-sans-serif,system-ui;
+    border-radius: 50px;
+    outline: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.input-box input::placeholder {
+    color: #ffffff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5;
+}
+/* Quando o olho está normal (senha escondida) */
+.fa-eye {
+  color: #ffffff; /* branco */
+}
+
+/* Quando o olho está riscado (senha visível) */
+.fa-eye-slash {
+  color: #00ffcc; /* verde/azulado neon */
+}
+.remember-forgot {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+.remember-forgot label input {
+    accent-color: rgb(242, 240, 240);
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: black;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+      text-decoration-color: blue;
+      color: black;
+    
+}
+
+.login {
+    width: 28%;
+    height: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #f4f1f1;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    margin: 20px 0 0;
+   
+
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    color: #0e0d0d;
+}
+
+.register-link {
+    font-size: 18px;
+    text-align: center;
+    margin: -10px 0 10px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color:  rgb(0, 119, 255);
+    font-weight: 600;
+}
+
+.register-link a:hover {
+     text-decoration: underline;
+      text-decoration-color:gray;
+      color: rgb(0, 119, 255);
+}
+
+
+
+/* Notas sobre margin & padding:
+   - 1 valor: margin: 20px; (todos os lados)
+   - 2 valores: margin: 20px 30px; (cima/baixo e laterais)
+   - 3 valores: margin: 20px 30px 40px; (cima, lados, baixo)
+*/
